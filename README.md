@@ -2,6 +2,26 @@
 
 Laboratório de backend em Go, com exemplos pequenos, executáveis e comentados em português. Aprenda o problema que cada técnica resolve e o custo de adotá-la.
 
+## Fundamentos de Go
+
+**[Comece pela trilha de fundamentos](fundamentals/README.md)**: 12 exemplos com explicações `//` no código, quando usar, saída de referência e exercícios. Inclui ponteiros, slices, maps, interfaces, erros, defer, goroutines, channels, select, context.Context, mutex e uma integração concorrente de cotações.
+
+```sh
+go run ./fundamentals/07-goroutines
+go run ./fundamentals/10-context
+go run -race ./fundamentals/11-concurrency
+```
+
+## Backend e preparação para entrevistas
+
+**[Guia de backend](docs/backend-interview/README.md)**: investigação de latência, saúde da aplicação, API em camadas, contratos, graceful shutdown, resiliência, mensageria, índices/EXPLAIN, CI/CD e relato de projeto.
+
+O [consumidor idempotente](messaging/idempotency/README.md) demonstra duplicatas concorrentes e traz um roteiro de deduplicação transacional em PostgreSQL.
+
+```sh
+go run ./messaging/idempotency
+```
+
 ## Comece aqui
 
 Requisito: Go 1.22 ou superior. Só biblioteca padrão; não exige banco, Docker ou credenciais.
